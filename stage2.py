@@ -5,7 +5,7 @@ url = "https://sandboxdnac.cisco.com:443/api/system/v1/auth/token"
 
 payload  = {}
 headers = {
-  'Authorization': 'Basic ZGV2bmV0dXNlcjpDaXNjbzEyMyE=',
+  'Authorization': 'Basic ',
   'port': '443'
 }
 
@@ -24,7 +24,7 @@ url = "https://sandboxdnac.cisco.com/dna/intent/api/v1/network-device"
 payload = {}
 headers = {
   'x-auth-token': token_dna,
-  'Cookie': 'JSESSIONID=sy9i2y36kwkg15kkuxdem26pt'
+  'Cookie': ''
 }
 
 response = requests.request("GET", url, headers=headers, data = payload)
